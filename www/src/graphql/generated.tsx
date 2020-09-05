@@ -50,7 +50,6 @@ export type NewItemInput = {
   listId: Scalars['String'];
   name: Scalars['String'];
   description: Scalars['String'];
-  priority: Scalars['Float'];
 };
 
 export type Query = {
