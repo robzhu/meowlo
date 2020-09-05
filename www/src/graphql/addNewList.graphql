@@ -1,0 +1,6 @@
+mutation AddNewList($name: String!) {
+  addList(name: $name) {
+    id
+    name
+  }
+}

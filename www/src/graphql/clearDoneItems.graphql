@@ -1,0 +1,5 @@
+mutation ClearDoneItems($listId: String!) {
+  clearDoneItems(listId: $listId) {
+    id
+  }
+}

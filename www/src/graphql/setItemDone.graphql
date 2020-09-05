@@ -1,0 +1,5 @@
+mutation SetItemDone($done: Boolean!, $listId: String!, $itemId: String!) {
+  setItemDone(done: $done, listId: $listId, itemId: $itemId) {
+    ...FullItemDetails
+  }
+}

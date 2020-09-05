@@ -1,0 +1,20 @@
+query GetAllLists {
+  allLists {
+    ...FullListDetails
+  }
+}
+
+fragment FullListDetails on TodoList {
+  id
+  name
+  items {
+    ...FullItemDetails
+  }
+}
+
+fragment FullItemDetails on TodoItem {
+  id
+  name
+  description
+  done
+}
